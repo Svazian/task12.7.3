@@ -3,5 +3,5 @@ deposit = list(per_cent.values())
 money = int(input('введите сумму:'))
 for i in range(len(deposit)):
     deposit[i] *= money / 100
-deposit = list(map(int, deposit))
+deposit = list(map(round(), deposit))
 print('Максимальная сумма, которую вы можете заработать -', max(deposit))
